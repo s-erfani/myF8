@@ -1,0 +1,5 @@
+<app-header [level]="level"></app-header>
+
+@if (componentToRender) {
+  <ng-container *ngComponentOutlet="componentToRender"></ng-container>
+}

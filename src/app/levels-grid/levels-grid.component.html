@@ -1,0 +1,15 @@
+<div class="h-28 bg-gray-400 text-white flex items-center justify-center">
+  F8
+</div>
+<mat-grid-list [cols]="gridCols" rowHeight="2:1">
+  @for (level of levels; track level.id; let i = $index) {
+    @if (!level.isHidden) {
+    <mat-grid-tile>
+      <a [routerLink]="['/level', level.id]"
+         class="w-32 h-32 rounded-full bg-purple-600 border-8 border-green-500 text-white flex items-center justify-center">
+        {{ level.title }}
+      </a>
+    </mat-grid-tile>
+    }
+  }
+</mat-grid-list>
