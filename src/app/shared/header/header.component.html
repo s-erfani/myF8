@@ -1,7 +1,11 @@
 <div class="h-28 bg-gray-400 text-white flex items-center justify-between p-8">
-  <a routerLink="/">back</a>
+  <a routerLink="/">
+    <mat-icon>arrow_back_ios_new</mat-icon>
+  </a>
   <span>
-  {{level()?.title}}
+  {{ level()?.title }}
   </span>
-  <span (click)="showHint()">hint</span>
+  <span (click)="showHint()">
+    <mat-icon>lightbulb_outlined</mat-icon>
+</span>
 </div>

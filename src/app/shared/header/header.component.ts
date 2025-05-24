@@ -1,11 +1,13 @@
 import {Component, input} from '@angular/core';
 import {RouterLink} from '@angular/router';
 import {Level} from '../../models/level';
+import {MatIcon} from '@angular/material/icon';
 
 @Component({
   selector: 'app-header',
   imports: [
-    RouterLink
+    RouterLink,
+    MatIcon
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
