@@ -14,7 +14,7 @@ export class LevelService {
       hint: " What time is it?",
       difficulty: 1,
       order: 1,
-      color: "#ff0000",
+      color: "#008177",
       description: "",
       assets: {
         background: "",
@@ -25,18 +25,18 @@ export class LevelService {
     },
     {
       id: 2,
-      title: "test",
-      hint: " tes hint?",
+      title: "Location",
+      hint: "Satellite View",
       difficulty: 1,
       order: 2,
-      color: "#00ff00",
+      color: "#5a0287",
       description: "",
       assets: {
         background: "",
         icon: this.svgPaths.marker_question,
       },
       isHidden: false,
-      state: 'completed'
+      state: 'notCompleted'
     },
   ]
 

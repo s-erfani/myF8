@@ -1,7 +1,3 @@
 <div class="flex items-center justify-center mt-32">
-  <mat-form-field>
-    <mat-label>answer</mat-label>
-    <input matInput [(ngModel)]="textFieldValue">
-  </mat-form-field>
-  <p-button icon="pi pi-check" (click)="onSubmit()" />
+  <app-answer-box [(value)]="textFieldValue" (onSubmit)="onSubmit()"></app-answer-box>
 </div>

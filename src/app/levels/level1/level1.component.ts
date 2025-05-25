@@ -4,6 +4,7 @@ import {FormsModule} from '@angular/forms';
 import {Button} from 'primeng/button';
 import {Router} from '@angular/router';
 import {LevelService} from '../../services/level.service';
+import {AnswerBoxComponent} from '../../shared/answer-box/answer-box.component';
 
 @Component({
   selector: 'app-level1',
@@ -13,6 +14,7 @@ import {LevelService} from '../../services/level.service';
     MatInput,
     FormsModule,
     Button,
+    AnswerBoxComponent,
   ],
   templateUrl: './level1.component.html',
   styleUrl: './level1.component.css'
