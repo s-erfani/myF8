@@ -5,6 +5,7 @@ export interface Level {
   title: string;
   difficulty: number;
   hint: string;
+  color: string;
   description: string;
   order: number;
   assets: {

@@ -6,8 +6,15 @@
     @if (!level.isHidden) {
     <mat-grid-tile>
       <a [routerLink]="['/level', level.id]"
-         class="w-32 h-32 rounded-full bg-purple-600 border-8 border-green-500 text-white flex items-center justify-center">
-        {{ level.title }}
+         [style.background-color]="level.state=='completed' ?  level.color : ''"
+         [style.color]="level.state=='completed' ?  'white' : 'black'"
+         [style.border-color]="level.color"
+         class="w-32 h-32 rounded-full border-8 flex items-center justify-center">
+        <svg class="w-16 h-16 text-purple-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+        [style.color]="level.state=='completed' ?  'white' : level.color">
+          <path [attr.d]="level.assets.icon" />
+        </svg>
+
       </a>
     </mat-grid-tile>
     }
