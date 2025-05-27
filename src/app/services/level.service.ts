@@ -120,6 +120,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 6,
+        title: "Inspector",
+        hint: "inspect element with laptop",
+        difficulty: 3,
+        order: 6,
+        color: "#001d7e",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.detective,
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
