@@ -7,6 +7,8 @@ import {NgComponentOutlet} from '@angular/common';
 import {Level} from '../../models/level';
 import {LevelService} from '../../services/level.service';
 import {Level3Component} from '../level3/level3.component';
+import {Level4Component} from '../level4/level4.component';
+import {Level5Component} from '../level5/level5.component';
 
 @Component({
   selector: 'app-level-layout',
@@ -25,6 +27,8 @@ export class LevelLayoutComponent implements OnInit {
     1: Level1Component,
     2: Level2Component,
     3: Level3Component,
+    4: Level4Component,
+    5: Level5Component,
   };
 
   constructor(protected route: ActivatedRoute, private readonly levelService: LevelService) {

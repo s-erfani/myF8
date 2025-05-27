@@ -90,6 +90,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 4,
+        title: "QR Code",
+        hint: "Scan it!",
+        difficulty: 1,
+        order: 4,
+        color: "#9a7b00",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.qr_code,
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
