@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
+import {LevelService} from './services/level.service';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,10 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'myF8';
+
+  constructor(private levelService: LevelService) {
+    // levels are initialized automatically in service
+    console.log('Levels:', this.levelService.getLevels());
+  }
+
 }

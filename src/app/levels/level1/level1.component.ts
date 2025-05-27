@@ -1,7 +1,5 @@
 import {Component} from '@angular/core';
-import {MatFormField, MatInput, MatLabel} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
-import {Button} from 'primeng/button';
 import {Router} from '@angular/router';
 import {LevelService} from '../../services/level.service';
 import {AnswerBoxComponent} from '../../shared/answer-box/answer-box.component';
@@ -9,11 +7,7 @@ import {AnswerBoxComponent} from '../../shared/answer-box/answer-box.component';
 @Component({
   selector: 'app-level1',
   imports: [
-    MatFormField,
-    MatLabel,
-    MatInput,
     FormsModule,
-    Button,
     AnswerBoxComponent,
   ],
   templateUrl: './level1.component.html',
