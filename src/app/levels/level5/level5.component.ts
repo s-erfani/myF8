@@ -4,25 +4,23 @@ import {Router} from '@angular/router';
 import {LevelService} from '../../services/level.service';
 
 @Component({
-  selector: 'app-level4',
+  selector: 'app-level5',
     imports: [
         AnswerBoxComponent
     ],
-  templateUrl: './level4.component.html',
-  styleUrl: './level4.component.css'
+  templateUrl: './level5.component.html',
+  styleUrl: './level5.component.css'
 })
-export class Level4Component {
+export class Level5Component {
   textFieldValue: string = "";
 
   constructor(private router: Router, private readonly levelService: LevelService) {
   }
 
   onSubmit(): void {
-    if (this.textFieldValue.toLowerCase().trim() == "fateme") {
-      alert("Where is the 'H'??");
-    }
-    if (this.textFieldValue.toLowerCase().trim() == "fatemeh" ||this.textFieldValue.toLowerCase().trim() == "فاطمه") {
-      this.levelService.completeLevel(4);
+
+    if (this.textFieldValue.toLowerCase().trim() == "phantasma") {
+      this.levelService.completeLevel(5);
       this.router.navigate(['/']);
     }
   }

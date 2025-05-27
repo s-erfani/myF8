@@ -105,6 +105,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 5,
+        title: "Ghost",
+        hint: "Invisible text",
+        difficulty: 2,
+        order: 5,
+        color: "#700000",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.ghost,
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
