@@ -28,6 +28,9 @@ export class Level7Component implements OnInit, OnDestroy {
     if (this.scaleInterval) {
       clearInterval(this.scaleInterval);
     }
+    if(this.timeoutId){
+      clearTimeout(this.timeoutId);
+    }
   }
 
   startScaleInterval(): void {

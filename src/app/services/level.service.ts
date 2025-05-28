@@ -150,6 +150,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 8,
+        title: "Table",
+        hint: "Search on Table",
+        difficulty: 3,
+        order: 8,
+        color: "#0a8500",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.table,
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
