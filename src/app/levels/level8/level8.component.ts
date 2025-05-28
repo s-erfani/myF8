@@ -744,7 +744,6 @@ export class Level8Component implements AfterViewInit {
   }
 
   onSubmit(): void {
-
     if (this.textFieldValue.toLowerCase().trim() == "13751126") {
       this.levelService.completeLevel(8);
       this.router.navigate(['/']);

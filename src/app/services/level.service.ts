@@ -165,6 +165,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 9,
+        title: "Hashtag",
+        hint: "Search hashtag in telegram chat",
+        difficulty: 2,
+        order: 9,
+        color: "#1bf4ff",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.telegram,
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
