@@ -180,6 +180,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 10,
+        title: "Deep",
+        hint: "Scroll down",
+        difficulty: 1,
+        order: 9,
+        color: "#b36802",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.scroll,
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
