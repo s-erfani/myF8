@@ -135,6 +135,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 7,
+        title: "Do Nothing!",
+        hint: "do nothing",
+        difficulty: 3,
+        order: 7,
+        color: "#9c0086",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.hourglass,
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
