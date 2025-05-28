@@ -1,0 +1,8 @@
+
+<div
+  class="flex justify-center mt-24 flex-col items-center">
+  <app-answer-box [(value)]="textFieldValue" (onSubmit)="onSubmit()"></app-answer-box>
+</div>
+<div class="example-box" cdkDrag [cdkDragFreeDragPosition]="{x: -300, y: 0}">
+  Answer is my mobile password
+</div>

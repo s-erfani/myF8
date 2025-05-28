@@ -195,6 +195,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 11,
+        title: "Move It",
+        hint: "Drag the card",
+        difficulty: 1,
+        order: 9,
+        color: "#b36802",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.drag,
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
