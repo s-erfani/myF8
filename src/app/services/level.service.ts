@@ -185,7 +185,7 @@ export class LevelService {
         title: "Deep",
         hint: "Scroll down",
         difficulty: 1,
-        order: 9,
+        order: 10,
         color: "#b36802",
         description: "",
         assets: {
@@ -200,12 +200,27 @@ export class LevelService {
         title: "Move It",
         hint: "Drag the card",
         difficulty: 1,
-        order: 9,
+        order: 11,
         color: "#b36802",
         description: "",
         assets: {
           background: "",
           icon: this.svgPaths.drag,
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
+      {
+        id: 12,
+        title: "Easy",
+        hint: "just write the answer",
+        difficulty: 2,
+        order: 11,
+        color: "#da0101",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.write,
         },
         isHidden: false,
         state: 'notCompleted'
