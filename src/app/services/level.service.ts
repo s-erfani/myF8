@@ -3,7 +3,6 @@ import { Level } from '../models/level';
 import { SVG_PATHS } from '../shared/svg-paths';
 
 const LEVELS_STORAGE_KEY = 'game_levels';
-
 @Injectable({
   providedIn: 'root'
 })
@@ -236,6 +235,21 @@ export class LevelService {
         assets: {
           background: "",
           icon: this.svgPaths.click
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
+      {
+        id: 14,
+        title: "Math",
+        hint: "angle = number",
+        difficulty: 2,
+        order: 13,
+        color: "#00ec0c",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.math
         },
         isHidden: false,
         state: 'notCompleted'
