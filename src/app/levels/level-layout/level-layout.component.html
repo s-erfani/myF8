@@ -1,4 +1,7 @@
-<app-header [level]="level"></app-header>
+@if (level.id != 13) {
+  <app-header [level]="level"></app-header>
+}
+
 
 @if (componentToRender) {
   <ng-container *ngComponentOutlet="componentToRender"></ng-container>

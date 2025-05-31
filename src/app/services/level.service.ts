@@ -199,7 +199,7 @@ export class LevelService {
         id: 11,
         title: "Move It",
         hint: "Drag the card",
-        difficulty: 1,
+        difficulty: 3,
         order: 11,
         color: "#b36802",
         description: "",
@@ -215,12 +215,27 @@ export class LevelService {
         title: "Easy",
         hint: "just write the answer",
         difficulty: 2,
-        order: 11,
+        order: 12,
         color: "#da0101",
         description: "",
         assets: {
           background: "",
           icon: this.svgPaths.write,
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
+      {
+        id: 13,
+        title: "Click Me",
+        hint: "click the title",
+        difficulty: 2,
+        order: 13,
+        color: "#d04dff",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.click
         },
         isHidden: false,
         state: 'notCompleted'

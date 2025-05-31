@@ -18,7 +18,6 @@ export class Level12Component {
   }
 
   onSubmit(): void {
-
     if (this.textFieldValue.trim() == "Hw4Y%11111gH&34GFV5HLs865g") {
       this.levelService.completeLevel(12);
       this.router.navigate(['/']);

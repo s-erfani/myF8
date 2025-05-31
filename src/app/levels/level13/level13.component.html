@@ -1,0 +1,40 @@
+<div class="h-28 bg-gray-400 text-white flex items-center justify-between p-8">
+  <a routerLink="/">
+    <i class="pi pi-chevron-left cursor-pointer !text-4xl"></i>
+  </a>
+  <span class="text-4xl cursor-pointer select-none" (click)="changeNextLetterColor()">
+    @for (letter of letters; track letter; let i = $index) {
+      <span [style.color]="colors[i]">{{ letter }}</span>
+    }
+</span>
+
+  <span (click)="showHint()">
+    <i class="pi pi-lightbulb cursor-pointer !text-4xl"></i>
+ </span>
+</div>
+<div>
+  <button class="first-button cursor-pointer absolute top-12 left-14">
+    Not Me!
+  </button>
+  <button class="second-button cursor-pointer absolute top-34 left-1/3">
+    Not Me!
+  </button>
+  <div class="absolute top-1/2 left-10">
+    <button class="btn">
+      <i class="animation"></i>
+      Not Me!
+      <i class="animation"></i>
+    </button>
+  </div>
+
+  <button class="third-button absolute bottom-10 right-1/2">
+    <span>N</span>
+    <span>O</span>
+    <span>T</span>
+    <span></span>
+    <span>M</span>
+    <span>E</span>
+  </button>
+</div>
+
+

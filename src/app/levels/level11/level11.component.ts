@@ -20,7 +20,6 @@ export class Level11Component {
   }
 
   onSubmit(): void {
-
     if (this.textFieldValue.toLowerCase().trim() == "2310") {
       this.levelService.completeLevel(11);
       this.router.navigate(['/']);
