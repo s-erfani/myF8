@@ -259,12 +259,27 @@ export class LevelService {
         title: "First Anniversary",
         hint: "Imamzadeh Saleh",
         difficulty: 1,
-        order: 14,
-        color: "#00ec0c",
+        order: 15,
+        color: "#ca99f3",
         description: "",
         assets: {
           background: "",
           icon: this.svgPaths.anniversary
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
+      {
+        id: 16,
+        title: "Email",
+        hint: "check your email",
+        difficulty: 3,
+        order: 16,
+        color: "#0043ec",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.mail
         },
         isHidden: false,
         state: 'notCompleted'

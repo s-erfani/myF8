@@ -38,5 +38,9 @@ export class Level1Component {
       this.levelService.completeLevel(1);
       this.router.navigate(['/']);
     }
+    if(this.textFieldValue.trim() == "2613"){
+      this.levelService.completeLevel(16);
+      this.router.navigate(['/']);
+    }
   }
 }

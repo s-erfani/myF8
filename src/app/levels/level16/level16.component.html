@@ -1,0 +1,11 @@
+<div class="flex justify-center mt-40">
+  <form (ngSubmit)="sendEmail()" #emailForm="ngForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Your Email</mat-label>
+      <input matInput name="email" [(ngModel)]="userEmail" required email>
+    </mat-form-field>
+    <button class="ml-4" mat-raised-button color="primary" [disabled]="!emailForm.valid">
+      <i class="pi pi-envelope"></i>
+    </button>
+  </form>
+</div>
