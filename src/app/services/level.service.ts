@@ -254,6 +254,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 15,
+        title: "First Anniversary",
+        hint: "Imamzadeh Saleh",
+        difficulty: 1,
+        order: 14,
+        color: "#00ec0c",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.anniversary
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }

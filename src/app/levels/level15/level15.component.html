@@ -1,0 +1,15 @@
+<div class="flex justify-center mt-24 flex-col items-center">
+  <mat-form-field appearance="fill">
+    <mat-label>Choose a date</mat-label>
+    <input
+      matInput
+      [matDatepicker]="picker"
+      [(ngModel)]="selectedDate"
+      (dateChange)="onDateChange($event)">
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker
+      #picker
+      [dateClass]="highlightSpecialDate">
+    </mat-datepicker>
+  </mat-form-field>
+</div>

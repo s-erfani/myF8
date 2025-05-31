@@ -5,12 +5,14 @@ import {routes} from './app.routes';
 import {providePrimeNG} from 'primeng/config';
 import Aura from '@primeng/themes/aura';
 import {provideHttpClient} from '@angular/common/http';
+import {provideNativeDateAdapter} from '@angular/material/core';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({eventCoalescing: true}),
     provideRouter(routes),
     provideHttpClient(),
+    provideNativeDateAdapter(),
     providePrimeNG({
       theme: {
         preset: Aura,

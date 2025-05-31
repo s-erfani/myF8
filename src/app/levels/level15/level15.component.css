@@ -1,0 +1,16 @@
+/deep/ .custom-highlight .mat-calendar-body-cell-content {
+  background-color: red !important;
+  color: white !important;
+  width: 32px;
+  height: 32px;
+  clip-path: path("M16 29s-13-8.14-13-17A7 7 0 0 1 16 5a7 7 0 0 1 13 7c0 8.86-13 17-13 17z");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+
+::ng-deep .custom-highlight .mat-calendar-body-cell-content:hover {
+  transform: scale(1.1);
+}
