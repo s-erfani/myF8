@@ -36,7 +36,7 @@ export class Level7Component implements OnInit, OnDestroy {
   startScaleInterval(): void {
     this.scaleInterval = setInterval(() => {
       this.scale += 0.2;
-    }, 10000);
+    }, 5000);
   }
 
   startTimer(): void {

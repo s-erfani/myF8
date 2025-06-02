@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
 import emailjs from 'emailjs-com';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInput} from '@angular/material/input';
 import {MatButton} from '@angular/material/button';
 import {FormsModule} from '@angular/forms';
-import {AnswerBoxComponent} from '../../shared/answer-box/answer-box.component';
 
 @Component({
   selector: 'app-level16',
@@ -14,7 +12,6 @@ import {AnswerBoxComponent} from '../../shared/answer-box/answer-box.component';
     MatInput,
     MatButton,
     FormsModule,
-    AnswerBoxComponent
   ],
   templateUrl: './level16.component.html',
   styleUrl: './level16.component.css'

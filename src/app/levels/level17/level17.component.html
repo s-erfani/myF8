@@ -1,0 +1,12 @@
+<div id="flashlight"></div>
+
+<div (click)="showAnswerBox=true" id="secret" class="hidden-text noSelect cursor-pointer">🎉 You found me!</div>
+<div id="secret-code" class="hidden-text">1404</div>
+
+@if (showAnswerBox) {
+  <div
+    class="flex justify-center mt-24 flex-col items-center">
+    <app-answer-box class="mt-16" [(value)]="textFieldValue" (onSubmit)="onSubmit()"></app-answer-box>
+  </div>
+}
+

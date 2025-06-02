@@ -284,6 +284,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 17,
+        title: "Flash light",
+        hint: "Find the hidden text",
+        difficulty: 3,
+        order: 17,
+        color: "#0043ec",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.flashlight
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
