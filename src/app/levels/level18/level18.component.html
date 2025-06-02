@@ -1,0 +1,5 @@
+<div
+  class="flex justify-center mt-24 flex-col items-center">
+  <i (click)="copyToClipboard()" class="pi pi-clipboard cursor-pointer" style="font-size: 120px"></i>
+  <app-answer-box class="mt-16" [(value)]="textFieldValue" (onSubmit)="onSubmit()"></app-answer-box>
+</div>

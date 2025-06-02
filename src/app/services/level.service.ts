@@ -286,15 +286,30 @@ export class LevelService {
       },
       {
         id: 17,
-        title: "Flash light",
+        title: "Flashlight",
         hint: "Find the hidden text",
         difficulty: 3,
         order: 17,
-        color: "#0043ec",
+        color: "#456e3d",
         description: "",
         assets: {
           background: "",
           icon: this.svgPaths.flashlight
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
+      {
+        id: 18,
+        title: "Clipboard",
+        hint: "check your clipboard",
+        difficulty: 1,
+        order: 18,
+        color: "#ff1aa5",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.clipboard
         },
         isHidden: false,
         state: 'notCompleted'
