@@ -329,6 +329,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 20,
+        title: "Don't Blink",
+        hint: "Be fast!",
+        difficulty: 2,
+        order: 20,
+        color: "#d5cb00",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.flash
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }

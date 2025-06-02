@@ -1,0 +1,16 @@
+.box {
+  padding: 1.5rem;
+  border: 2px dashed #999;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.25rem;
+  user-select: none;
+}
+
+.box.highlighted {
+  border-style: solid;
+  border-color: #2563eb; /* blue-600 */
+  background-color: #dbeafe; /* blue-100 */
+}

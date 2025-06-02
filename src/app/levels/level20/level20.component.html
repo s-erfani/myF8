@@ -1,0 +1,14 @@
+
+<div class="grid grid-cols-3 gap-4 max-w-md mx-auto mt-32 p-4">
+  @for (box of boxes; track i; let i = $index) {
+    <div
+      (click)="handleClick(i)"
+      [class.highlighted]="i === activeBox"
+      class="box"
+    >
+      {{i+1}}
+    </div>
+  }
+</div>
+
+
