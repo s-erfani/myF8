@@ -314,6 +314,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 19,
+        title: "Binary",
+        hint: "It's just binary",
+        difficulty: 2,
+        order: 19,
+        color: "#ff1aa5",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.binary
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
