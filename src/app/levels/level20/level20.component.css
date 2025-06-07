@@ -11,6 +11,6 @@
 
 .box.highlighted {
   border-style: solid;
-  border-color: #2563eb; /* blue-600 */
-  background-color: #dbeafe; /* blue-100 */
+  border-color: #2563eb;
+  background-color: #dbeafe;
 }

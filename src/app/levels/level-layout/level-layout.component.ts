@@ -24,6 +24,11 @@ import {Level17Component} from '../level17/level17.component';
 import {Level18Component} from '../level18/level18.component';
 import {Level19Component} from '../level19/level19.component';
 import {Level20Component} from '../level20/level20.component';
+import {Level21Component} from '../level21/level21.component';
+import {Level22Component} from '../level22/level22.component';
+import {Level23Component} from '../level23/level23.component';
+import {Level24Component} from '../level24/level24.component';
+import {Level25Component} from '../level25/level25.component';
 
 @Component({
   selector: 'app-level-layout',
@@ -59,6 +64,11 @@ export class LevelLayoutComponent implements OnInit {
     18: Level18Component,
     19: Level19Component,
     20: Level20Component,
+    21: Level21Component,
+    22: Level22Component,
+    23: Level23Component,
+    24: Level24Component,
+    25: Level25Component,
   };
 
   constructor(protected route: ActivatedRoute, private readonly levelService: LevelService) {

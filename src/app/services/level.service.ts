@@ -344,6 +344,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 21,
+        title: "Order",
+        hint: "click circles in order",
+        difficulty: 2,
+        order: 21,
+        color: "#ef7317",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.order
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }

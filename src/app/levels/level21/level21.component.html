@@ -1,0 +1,10 @@
+<div class="grid">
+  @for (i of [].constructor(totalCircles); track i; let idx = $index) {
+    <div
+      class="circle"
+      [ngClass]="{ 'correct': isCorrect(idx + 1) }"
+      (click)="onClick(idx + 1)">
+
+    </div>
+  }
+</div>
