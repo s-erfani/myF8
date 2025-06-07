@@ -1,8 +1,9 @@
-import { Injectable } from '@angular/core';
-import { Level } from '../models/level';
-import { SVG_PATHS } from '../shared/svg-paths';
+import {Injectable} from '@angular/core';
+import {Level} from '../models/level';
+import {SVG_PATHS} from '../shared/svg-paths';
 
 const LEVELS_STORAGE_KEY = 'game_levels';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -355,6 +356,21 @@ export class LevelService {
         assets: {
           background: "",
           icon: this.svgPaths.order
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
+      {
+        id: 22,
+        title: "Origami",
+        hint: "open your origami",
+        difficulty: 2,
+        order: 22,
+        color: "#71f33d",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.origami
         },
         isHidden: false,
         state: 'notCompleted'
