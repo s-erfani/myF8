@@ -43,6 +43,22 @@ export class LevelService {
     }
   }
 
+  halfCompleteLevel(id: number): void {
+    const level = this.levels.find(l => l.id === id);
+    if (level) {
+      level.state = 'halfCompleted';
+      this.saveLevels();
+    }
+  }
+
+  updateDescription(id: number, text : string): void {
+    const level = this.levels.find(l => l.id === id);
+    if (level) {
+      level.description = text;
+      this.saveLevels();
+    }
+  }
+
   private getDefaultLevels(): Level[] {
     return [
       {
@@ -426,6 +442,21 @@ export class LevelService {
         hint: "search morse code",
         difficulty: 2,
         order: 26,
+        color: "#3a0350",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.heart
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
+      {
+        id: 27,
+        title: "My Sun, My Moon",
+        hint: "check level on specific time",
+        difficulty: 4,
+        order: 27,
         color: "#3a0350",
         description: "",
         assets: {

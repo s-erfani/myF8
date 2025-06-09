@@ -4,18 +4,37 @@
 <mat-grid-list [cols]="gridCols" rowHeight="2:1">
   @for (level of levels; track level.id; let i = $index) {
     @if (!level.isHidden) {
-    <mat-grid-tile>
-      <a [routerLink]="['/level', level.id]"
-         [style.background-color]="level.state=='completed' ?  level.color : ''"
-         [style.color]="level.state=='completed' ?  'white' : 'black'"
-         [style.border-color]="level.color"
-         class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full border-8 flex items-center justify-center">
-        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-        [style.color]="level.state=='completed' ?  'white' : level.color">
-          <path [attr.d]="level.assets.icon" />
-        </svg>
-      </a>
-    </mat-grid-tile>
+      <mat-grid-tile>
+        <a
+          [routerLink]="['/level', level.id]"
+          [attr.style]="
+      'display: flex;' +
+      'align-items: center;' +
+      'justify-content: center;' +
+      'width: 8rem;' +
+      'height: 8rem;' +
+      'border-radius: 9999px;' +
+      'border: 8px solid ' + level.color + ';' +
+      (level.state === 'completed'
+        ? 'background-color:' + level.color + ';color:white;'
+        : level.state === 'halfCompleted'
+        ? 'background: linear-gradient(to right, rgba(' +
+          getRgb(level.color) + ', 0.5) 50%, white 50%);color:black;'
+        : 'background-color:white;color:black;')
+    "
+        >
+          <svg
+            class="w-16 h-16"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            [attr.style]="'color:' + (level.state === 'completed' ? 'white' : level.color)"
+          >
+            <path [attr.d]="level.assets.icon" />
+          </svg>
+        </a>
+      </mat-grid-tile>
+
     }
   }
 </mat-grid-list>

@@ -1,0 +1,35 @@
+<div class="flex flex-col items-center gap-12 mt-16">
+
+  <!-- 🌙 Night Row -->
+  <div class="flex items-center gap-6">
+    <img src="/images/8%20clock.png" alt="2 AM" class="w-24 h-24">
+    <button
+      (click)="onMoonSubmit()"
+      [disabled]="!isMoonTime"
+      class="text-3xl p-3 rounded-full transition-all duration-300"
+      [ngClass]="{
+      'bg-blue-900 text-white cursor-pointer': isMoonTime,
+      'bg-gray-300 text-gray-500 cursor-not-allowed': !isMoonTime
+    }">
+      🌙
+    </button>
+    <img src="/images/9%20clock.png" alt="3 AM" class="w-24 h-24">
+  </div>
+
+  <!-- ☀️ Day Row -->
+  <div class="flex items-center gap-6 mt-10">
+    <img src="/images/1%20clock.jpg" alt="12 PM" class="w-24 h-24">
+    <button
+      (click)="onSunSubmit()"
+      [disabled]="!isSunTime"
+      class="text-3xl p-3 rounded-full transition-all duration-300"
+      [ngClass]="{
+      'bg-yellow-400 text-white cursor-pointer': isSunTime,
+      'bg-gray-300 text-gray-500 cursor-not-allowed': !isSunTime
+    }">
+      ☀️
+    </button>
+    <img src="/images/2%20clock.jpg" alt="1 PM" class="w-24 h-24">
+  </div>
+
+</div>

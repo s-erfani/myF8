@@ -43,4 +43,18 @@ export class LevelsGridComponent implements OnInit {
       this.gridCols = 5;
     }
   }
+
+  getRgb(hex: string): string {
+    if (!hex) return '0,0,0';
+    hex = hex.replace('#', '');
+    if (hex.length === 3) {
+      hex = hex.split('').map(c => c + c).join('');
+    }
+    const bigint = parseInt(hex, 16);
+    const r = (bigint >> 16) & 255;
+    const g = (bigint >> 8) & 255;
+    const b = bigint & 255;
+    return `${r},${g},${b}`;
+  }
+
 }
