@@ -34,7 +34,6 @@ export class Level18Component {
   }
 
   onSubmit(): void {
-    console.log(this.calculateAge().toString())
     if (this.textFieldValue.toLowerCase().trim() == this.calculateAge().toString()) {
       this.levelService.completeLevel(18);
       this.router.navigate(['/']);

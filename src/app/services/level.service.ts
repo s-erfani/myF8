@@ -375,6 +375,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 23,
+        title: "Feel It!",
+        hint: "answer is in the lyrics",
+        difficulty: 2,
+        order: 23,
+        color: "#f33d58",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.youtube
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
