@@ -466,6 +466,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 28,
+        title: "My Sun, My Moon",
+        hint: "check level on specific time",
+        difficulty: 4,
+        order: 28,
+        color: "#3a0350",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.heart
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
