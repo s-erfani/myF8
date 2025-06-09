@@ -1,0 +1,10 @@
+<span class="flex flex-col items-center gap-6 p-8 font-bold">
+  Select the First 3 Dates
+</span>
+<div id="map" style="height: 400px;"></div>
+@if (allTargetsFound) {
+  <span (click)="onSubmit()" class="flex flex-col items-center mt-8 font-bold cursor-pointer">
+<i class="pi pi-heart text-red-500 !text-6xl"></i>
+</span>
+}
+

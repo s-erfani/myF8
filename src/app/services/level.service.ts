@@ -405,6 +405,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 25,
+        title: "Map",
+        hint: "select the location of first 3 dates",
+        difficulty: 4,
+        order: 25,
+        color: "#504c03",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.marker
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
