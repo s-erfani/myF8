@@ -420,6 +420,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 26,
+        title: "Morse",
+        hint: "search morse code",
+        difficulty: 2,
+        order: 26,
+        color: "#3a0350",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.heart
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
