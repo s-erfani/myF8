@@ -498,10 +498,10 @@ export class LevelService {
       },
       {
         id: 30,
-        title: "My Sun, My Moon",
-        hint: "check level on specific time",
-        difficulty: 4,
-        order: 28,
+        title: "Maze",
+        hint: "complete the maze, easy",
+        difficulty: 2,
+        order: 30,
         color: "#3a0350",
         description: "",
         assets: {
