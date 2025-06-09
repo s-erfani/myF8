@@ -1,0 +1,39 @@
+<div class="flex flex-col items-center gap-6 p-8">
+  <!-- City Images with + and - signs -->
+  <div class="flex items-center gap-4">
+    <div class="text-center">
+      <img src="/images/paris.jpg" alt="paris" class="w-32 h-20 object-cover rounded-lg shadow"
+           (click)="openFullScreen($event)"/>
+    </div>
+
+    <span class="text-3xl font-bold">+</span>
+
+    <div class="text-center">
+      <img src="/images/berlin.jpg" alt="berlin" class="w-32 h-20 object-cover rounded-lg shadow"
+           (click)="openFullScreen($event)"/>
+    </div>
+
+    <span class="text-3xl font-bold">−</span>
+
+    <div class="text-center">
+      <img src="/images/sydney.jpg" alt="sydney" class="w-32 h-20 object-cover rounded-lg shadow"
+           (click)="openFullScreen($event)"/>
+    </div>
+  </div>
+
+  <div class="flex flex-row items-center justify-center mt-6">
+    <input [(ngModel)]="city" placeholder="City" class="border px-4 py-2 rounded shadow"/>
+    <button (click)="getTemp()" class=" bg-blue-600 text-white px-6 py-2 ml-1 rounded hover:bg-blue-700 transition">
+      <i class="pi pi-cloud"></i>
+    </button>
+
+
+  </div>
+  @if (temp !== null) {
+    <p class=" text-xl">
+      {{ temp?.toFixed(0) }}°C
+    </p>
+  }
+  <app-answer-box [(value)]="textFieldValue" (onSubmit)="onSubmit()"></app-answer-box>
+
+</div>

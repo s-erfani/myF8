@@ -390,6 +390,21 @@ export class LevelService {
         isHidden: false,
         state: 'notCompleted'
       },
+      {
+        id: 24,
+        title: "Weather",
+        hint: "check temp of the cities",
+        difficulty: 3,
+        order: 24,
+        color: "#1890e1",
+        description: "",
+        assets: {
+          background: "",
+          icon: this.svgPaths.weather
+        },
+        isHidden: false,
+        state: 'notCompleted'
+      },
     ];
   }
 }
