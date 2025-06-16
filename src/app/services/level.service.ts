@@ -229,7 +229,7 @@ export class LevelService {
       {
         id: 12,
         title: "Easy",
-        hint: "just write the answer",
+        hint: "just type the answer",
         difficulty: 2,
         order: 12,
         color: "#da0101",

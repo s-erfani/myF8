@@ -13,8 +13,8 @@
 
 #secret {
   position: absolute;
-  bottom: 300px;
-  left: 400px;
+  bottom: 120px;
+  left: 40px;
   color: #0050ff;
   font-size: 24px;
   opacity: 0;
@@ -24,7 +24,7 @@
 #secret-code {
   position: absolute;
   top: 30px;
-  right: 300px;
+  right: 120px;
   color: #cf2c2c;
   font-size: 24px;
   opacity: 0;

@@ -16,6 +16,7 @@ import {RouterLink} from '@angular/router';
 })
 export class LevelsGridComponent implements OnInit {
   gridCols = 4;
+  rowHeight = "1:1";
   levels: Level[]= [];
 
   constructor(private readonly levelService: LevelService) {
@@ -33,12 +34,16 @@ export class LevelsGridComponent implements OnInit {
 
   updateGridCols(width: number) {
     if (width <= 480) {
-      this.gridCols = 2;
-    } else if (width <= 768) {
       this.gridCols = 3;
-    } else if (width <= 1024) {
+      this.rowHeight = "1:1"
+    } else if (width <= 768) {
+      this.rowHeight = "1:1"
       this.gridCols = 4;
+    } else if (width <= 1024) {
+      this.rowHeight = "1:1"
+      this.gridCols = 5;
     } else {
+      this.rowHeight = "2:1"
       this.gridCols = 5;
     }
   }

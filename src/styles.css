@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: 'Pigpen';
-  src: url('/fonts/PigpenCipher.ttf') format('truetype');
+  /* stylelint-disable-next-line */
+  src: url("assets/fonts/PigpenCipher.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }

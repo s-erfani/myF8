@@ -1,7 +1,7 @@
-<div class="h-28 bg-gray-400 text-white flex items-center justify-center">
-  F8
+<div class="h-24 bg-gray-400 text-white flex items-center justify-center">
+  4MyF8
 </div>
-<mat-grid-list [cols]="gridCols" rowHeight="2:1">
+<mat-grid-list class="mt-4" [cols]="gridCols" [rowHeight]="rowHeight">
   @for (level of levels; track level.id; let i = $index) {
     @if (!level.isHidden) {
       <mat-grid-tile>

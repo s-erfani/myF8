@@ -22,7 +22,7 @@ export class Level3Component {
     if (this.textFieldValue.toLowerCase().trim() == "help") {
       this.showHint = true;
       }
-    if (this.textFieldValue.toLowerCase().trim() == "test") {
+    if (this.textFieldValue.toLowerCase().trim() == "goodjob") {
       this.levelService.completeLevel(3);
       this.router.navigate(['/']);
     }
