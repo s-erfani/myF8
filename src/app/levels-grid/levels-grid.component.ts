@@ -1,7 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {MatGridList, MatGridTile} from '@angular/material/grid-list';
 import {LevelService} from '../services/level.service';
-import { Level } from '../models/level';
+import {Level} from '../models/level';
 import {RouterLink} from '@angular/router';
 
 @Component({
@@ -17,7 +17,9 @@ import {RouterLink} from '@angular/router';
 export class LevelsGridComponent implements OnInit {
   gridCols = 4;
   rowHeight = "1:1";
-  levels: Level[]= [];
+  levels: Level[] = [];
+  clickCount = 0;
+  title = "4MyF8";
 
   constructor(private readonly levelService: LevelService) {
   }
@@ -25,6 +27,21 @@ export class LevelsGridComponent implements OnInit {
   ngOnInit() {
     this.levels = this.levelService.getLevels();
     this.updateGridCols(window.innerWidth);
+  }
+
+  updateText() {
+    this.clickCount++
+    if (this.clickCount == 2) {
+      this.title = "ForMyF8";
+    } else if (this.clickCount == 3) {
+      this.title = "ForMyFate";
+    } else if (this.clickCount == 4) {
+      this.title = "For MyFate";
+    } else if (this.clickCount == 5) {
+      this.title = "For My Fate";
+    } else if (this.clickCount == 6) {
+      this.title = "For My Fatemeh";
+    }
   }
 
   @HostListener('window:resize', ['$event'])

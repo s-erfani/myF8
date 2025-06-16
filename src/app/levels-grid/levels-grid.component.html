@@ -1,5 +1,8 @@
-<div class="h-24 bg-gray-400 text-white flex items-center justify-center">
-  4MyF8
+<div (click)="updateText()" style="background: cadetblue" class="h-28 text-4xl text-white flex items-center justify-center">
+  {{title}}
+  @if (clickCount >= 7) {
+    <i class="pi pi-heart-fill ml-2 !text-4xl" style="color: red"></i>
+  }
 </div>
 <mat-grid-list class="mt-4" [cols]="gridCols" [rowHeight]="rowHeight">
   @for (level of levels; track level.id; let i = $index) {

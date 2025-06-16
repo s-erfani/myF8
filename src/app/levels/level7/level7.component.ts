@@ -1,7 +1,8 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, inject, OnDestroy, OnInit} from '@angular/core';
 import {LevelService} from '../../services/level.service';
 import {Router} from '@angular/router';
 import {NgStyle} from '@angular/common';
+import {MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-level7',
@@ -15,6 +16,9 @@ export class Level7Component implements OnInit, OnDestroy {
   private timeoutId: any;
   private scaleInterval: any;
   scale: number = 1;
+  private _snackBar = inject(MatSnackBar);
+  horizontalPosition: MatSnackBarHorizontalPosition = 'center';
+  verticalPosition: MatSnackBarVerticalPosition = 'top';
 
   constructor(private router: Router, private readonly levelService: LevelService) {
   }
@@ -51,7 +55,11 @@ export class Level7Component implements OnInit, OnDestroy {
     clearTimeout(this.timeoutId);
     clearInterval(this.scaleInterval)
     this.scale = 1;
-    alert("You did Something!");
+    this._snackBar.open(("You did Something!"), "Ok", {
+      horizontalPosition: this.horizontalPosition,
+      verticalPosition: this.verticalPosition,
+    });
+    // alert("You did Something!");
     this.startScaleInterval();
     this.startTimer();
   }
