@@ -10,7 +10,6 @@ import {RouterLink} from '@angular/router';
     MatGridList,
     MatGridTile,
     RouterLink,
-
   ],
   templateUrl: './levels-grid.component.html',
   styleUrl: './levels-grid.component.css'

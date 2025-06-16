@@ -322,7 +322,7 @@ export class LevelService {
         hint: "check your clipboard",
         difficulty: 1,
         order: 18,
-        color: "#ff1aa5",
+        color: "#3b4455",
         description: "",
         assets: {
           background: "",
@@ -457,7 +457,7 @@ export class LevelService {
         hint: "check level on specific time",
         difficulty: 4,
         order: 27,
-        color: "#3a0350",
+        color: "#042c70",
         description: "",
         assets: {
           background: "",
@@ -468,8 +468,8 @@ export class LevelService {
       },
       {
         id: 28,
-        title: "My Sun, My Moon",
-        hint: "check level on specific time",
+        title: "Dmitri Mendeleev",
+        hint: "use table level for help",
         difficulty: 4,
         order: 28,
         color: "#3a0350",
