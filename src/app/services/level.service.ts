@@ -472,7 +472,7 @@ export class LevelService {
         hint: "use table level for help",
         difficulty: 4,
         order: 28,
-        color: "#3a0350",
+        color: "#4c6c08",
         description: "",
         assets: {
           background: "",
@@ -487,7 +487,7 @@ export class LevelService {
         hint: "type it in english",
         difficulty: 2,
         order: 29,
-        color: "#3a0350",
+        color: "#6c0448",
         description: "",
         assets: {
           background: "",
@@ -502,7 +502,7 @@ export class LevelService {
         hint: "complete the maze, easy",
         difficulty: 2,
         order: 30,
-        color: "#3a0350",
+        color: "#4aae28",
         description: "",
         assets: {
           background: "",
