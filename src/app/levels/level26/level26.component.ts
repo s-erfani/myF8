@@ -18,7 +18,7 @@ export class Level26Component {
   }
 
   onSubmit(): void {
-    if (this.textFieldValue.toLowerCase().trim() == "thank you") {
+    if (this.textFieldValue.toLowerCase().trim() == "thank you" || this.textFieldValue.toLowerCase().trim() == "thankyou") {
       this.levelService.completeLevel(26);
       this.router.navigate(['/']);
     }

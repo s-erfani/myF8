@@ -13,8 +13,7 @@ export class LevelService {
 
   constructor() {
     this.levels = this.getDefaultLevels();
-
-    // this.loadLevels();
+    this.loadLevels();
   }
 
   private loadLevels(): void {
